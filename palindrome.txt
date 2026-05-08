@@ -1,0 +1,23 @@
+Palindrome: It is something that reads the same backward and forward. 
+Ex: 11, 121, 1221, 1331, malyalam, naman, madam, level, radar etc.
+Real-life ex: we see ourself in the mirror, this is also a Palindrome. 
+
+## Negative nos. are not Palindrome. Ex: -121, -11 etc.
+## Nos. ending with 0(zero) are NOT Palindrome (except 0{zero} itself).
+
+* Basically it is symmetric around center.
+
+? Problem: Check given no. is Palindrome or not? 
+ => Input: 121, Output: True
+ => Input: -121, Output: False
+
+$ Code example: 
+@Approach-> reverse the number and compare:-
+    step 1: check if the no < 0; return false;
+    step 2: store original number (bcz we will change the no. later)
+    step 3: reverse the number(extract digits one by one) :-> Logic: 
+        a. take last digit -> no. % 10
+        b. Add digit to reversed no.
+        c. Remove last digit -> x / 10 
+    step 4: compare (if original == reversed -> Palindrome)
+*#* How to think in exam:- 1. reverse no, 2. use while loop, 3, compare
